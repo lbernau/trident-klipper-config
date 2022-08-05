@@ -14,6 +14,6 @@ make clean KCONFIG_CONFIG=config.sht42
 make menuconfig KCONFIG_CONFIG=config.sht42
 make KCONFIG_CONFIG=config.sht42
 read -p "SHT 42 (CAN-Board) firmware built, please check above for any errors. Press [Enter] to continue flashing, or [Ctrl+C] to abort"
-# python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u MYUUID
+python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 00b3cb86693f
 
 sudo service klipper start
