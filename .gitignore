@@ -1,4 +1,2 @@
-printer.cfg
 printer-*.cfg
 telegram_config.conf
-!printer-macros.cfg
