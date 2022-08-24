@@ -4,8 +4,8 @@
 config_folder=~/klipper_config
 
 push_config(){
-  eval $(ssh-agent)
-  ssh-add ~/.ssh/id_ed25519
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa
   cd $config_folder
   echo Pushing updates
   git pull -v
